@@ -21,4 +21,4 @@ RUN pipenv -v install --system \
 RUN echo "set -ex && cmd.sh && \$@" > /usr/local/bin/entrypoint.sh
 RUN chmod +x /usr/local/bin/entrypoint.sh
 ENTRYPOINT entrypoint.sh
-CMD ./test/cmd.sh
+CMD cmd.sh
